@@ -18,17 +18,17 @@ export default class Header extends React.Component {
   }
 
   render () {
-    var realImage = (
-        <Img src="http://animalia-life.com/data_images/cat/cat5.jpg"
-             width="802"
-             height="450"
-             className="cat-photo" />
-    );
+
+
 
     const {user} = this.props
     return (
       <div className='ant-layout-header'>
-        <realImage />
+        <Img src="http://animalia-life.com/data_images/cat/cat5.jpg"
+             width="802"
+             height="20"
+             />
+
         <Menu className="header-menu" onClick={this.handleClick}
         mode="horizontal">
           <SubMenu title={<span><Icon type="user" />{user.user}</span>}>
